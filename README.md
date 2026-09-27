@@ -47,8 +47,10 @@ sudo pacman -S nasm bochs
 wherever Bochs installed its shared files before running:
 
 ```bash
-export BXSHARE=$(brew --prefix bochs)/share/bochs   # macOS (Homebrew)
-export BXSHARE=/usr/share/bochs                   # Linux
+# macOS (Homebrew)
+export BXSHARE=$(brew --prefix bochs)/share/bochs
+# Linux
+export BXSHARE=/usr/share/bochs
 
 nasm -f bin boot.asm -o boot.com
 bochs -f bochsrc.txt
