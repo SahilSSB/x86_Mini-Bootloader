@@ -1,6 +1,6 @@
 megs: 32
-romimage: file=/opt/homebrew/Cellar/bochs/3.1/share/bochs/BIOS-bochs-latest, address=0xfffe0000
-vgaromimage: file=/opt/homebrew/Cellar/bochs/3.1/share/bochs/VGABIOS-lgpl-latest.bin
+romimage: file=$BXSHARE/BIOS-bochs-latest, address=0xfffe0000
+vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest.bin
 floppya:  1_44=boot.com, status=inserted
 boot: a 
 log: bochsout.txt
